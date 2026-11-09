@@ -1,0 +1,64 @@
+# Dependências
+node_modules/
+.pnpm-store/
+.yarn/
+
+# Build
+dist/
+build/
+out/
+target/
+apps/desktop/src-tauri/target/
+apps/desktop/src-tauri/gen/
+
+# Ambiente e segredos
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+
+# Banco e backups
+*.dump
+*.sql.gz
+*.backup
+backups/
+
+# Testes e cobertura
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+.vitest/
+
+# Logs e temporários
+*.log
+npm-debug.log*
+pnpm-debug.log*
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.iml
+
+# Tauri
+apps/desktop/src-tauri/.cargo/
+apps/desktop/src-tauri/WixTools/
+
+# Prisma
+apps/api/prisma/dev.db
+apps/api/prisma/*.db
+apps/api/prisma/*.db-journal
+
+# Referência auditada (não redistribuir)
+referencia/
